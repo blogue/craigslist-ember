@@ -1,8 +1,10 @@
-<div class="col-md-4">
-  <h3>{{model.title}}</h3>
-  <h5>Listed By: {{model.author}} - {{model.date}}</h5>
-  <h5>{{model.content}}</h5>
-  <img class="small-img" src="{{model.image}}"/>
+<div class="row">
+  <div class="col-md-12">
+    <h3>{{model.title}}</h3>
+    <h5>Listed By: {{model.author}} - {{model.date}}</h5>
+    <h5>{{model.content}}</h5>
+    <img class="small-img" src="{{model.image}}"/>
+  </div>
   {{edit-listing-tile edit='edit' delete='delete' listing=model}}
 </div>
 {{#link-to 'category' model.category}}Back to Category{{/link-to}}

@@ -1,7 +1,7 @@
 {{#if showListingEditForm}}
 
 <h4>Edit Listing</h4>
-  <div>
+  <div class="col-md-12">
     <form>
       <div class="form-group">
         <label for="owner">Title</label>
@@ -22,12 +22,15 @@
        <label for="image">Image</label>
        {{input value=listing.image id="image"}}
      </div>
-
-    <button {{action 'edit' listing}}>Save</button>
     </form>
-    <button {{action 'delete' listing}}>Delete Listing</button>
+    <div class="col-md-12">
+      <button class="btn btn-xs btn-primary" {{action 'edit' listing}}>Save</button>
+      <button class="btn btn-xs btn-danger" {{action 'delete' listing}}>Delete Listing</button>
+    </div>
   </div>
 {{else}}
-  <button {{action 'toggleEditForm'}}>Edit</button>
-  <button {{action 'delete' listing}}>Delete Listing</button>
+<div class="col-md-12">
+  <button class="btn btn-xs btn-primary" {{action 'toggleEditForm'}}>Edit</button>
+  <button class="btn btn-xs btn-danger" {{action 'delete' listing}}>Delete Listing</button>
+</div>
 {{/if}}
