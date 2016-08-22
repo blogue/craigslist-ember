@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: moment().format('h:mm a, M/D/YYYY'),
         content: this.get('content'),
+        location: this.get('location'),
         image: this.get('image') ? this.get('image'): "https://www.craigslist.org/images/peace.jpg",
         category: this.get('category'),
       };

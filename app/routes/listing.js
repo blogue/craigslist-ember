@@ -1,8 +1,13 @@
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('listing', params.listing_id);
+    var apiKey = config.myApiKey;
+    return Ember.RSVP.hash({
+      listing: this.store.findRecord('listing', params.listing_id),
+      key: apiKey
+    });
   },
   actions: {
     edit(listing, params) {

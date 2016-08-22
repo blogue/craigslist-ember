@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: this.get('date'),
         content: this.get('content'),
+        location: this.get('location'),
         image: this.get('image'),
         category: this.get('category'),
       };
