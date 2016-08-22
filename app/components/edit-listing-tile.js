@@ -18,6 +18,9 @@ export default Ember.Component.extend({
       };
       this.set('showListingEditForm', false);
       this.sendAction('edit', listing, params);
+    },
+    delete(listing) {
+      this.sendAction('delete', listing);
     }
 
   }

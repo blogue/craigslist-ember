@@ -23,9 +23,11 @@
        {{input value=listing.image id="image"}}
      </div>
 
-      <button {{action 'edit' listing}}>Save</button>
+    <button {{action 'edit' listing}}>Save</button>
     </form>
+    <button {{action 'delete' listing}}>Delete Listing</button>
   </div>
 {{else}}
   <button {{action 'toggleEditForm'}}>Edit</button>
+  <button {{action 'delete' listing}}>Delete Listing</button>
 {{/if}}

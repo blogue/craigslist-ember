@@ -7,9 +7,9 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         author: this.get('author'),
-        date: moment().format('M/D/YYYY'),
+        date: moment().format('h:mm a, M/D/YYYY'),
         content: this.get('content'),
-        image: this.get('image'),
+        image: this.get('image') ? this.get('image'): "https://www.craigslist.org/images/peace.jpg",
         category: this.get('category'),
       };
       this.sendAction('save', params);
