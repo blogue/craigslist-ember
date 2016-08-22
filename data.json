@@ -1,0 +1,15 @@
+{
+  "listings": [{
+    "title": "Stuff for sale",
+    "author": "Jerry",
+    "date": "Today",
+    "content": "Check out my stuff",
+    "image": "https://thumbs.dreamstime.com/x/scrap-junk-pile-9417921.jpg",
+    "category": "For Sale"
+    }],
+    "categories": [
+      {"name": "For Sale"},
+      {"name": "Cars"},
+      {"name": "Pets"}
+    ]
+}

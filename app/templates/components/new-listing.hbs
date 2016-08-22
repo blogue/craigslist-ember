@@ -1,0 +1,26 @@
+<h1>New Listing</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="owner">Title</label>
+          {{input value=title id="title"}}
+        </div>
+
+        <div class="form-group">
+          <label for="type">Author</label>
+          {{input value=author id="author"}}
+        </div>
+
+        <div class="form-group">
+          <label for="content">Content</label>
+          {{input value=content id="content"}}
+        </div>
+
+        <div class="form-group">
+         <label for="image">Image</label>
+         {{input value=image id="image"}}
+       </div>
+
+        <button {{action 'save'}}>Save</button>
+      </form>
+    </div>

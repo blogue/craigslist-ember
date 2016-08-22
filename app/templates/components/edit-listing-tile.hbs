@@ -1,0 +1,31 @@
+{{#if showListingEditForm}}
+
+<h4>Edit Listing</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="owner">Title</label>
+        {{input value=listing.title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Author</label>
+        {{input value=listing.author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{input value=listing.content id="content"}}
+      </div>
+
+      <div class="form-group">
+       <label for="image">Image</label>
+       {{input value=listing.image id="image"}}
+     </div>
+
+      <button {{action 'edit' listing}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'toggleEditForm'}}>Edit</button>
+{{/if}}
